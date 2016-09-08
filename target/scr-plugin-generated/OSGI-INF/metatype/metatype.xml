@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/metatype">
+    <OCD id="com.adobe.training.core.CleanupServiceImpl" name="Cleanup Service" description="%com.adobe.training.core.CleanupServiceImpl.description">
+        <AD id="scheduler.expression" type="String" default="*/5 * * * * ?" name="%scheduler.expression.name" description="%scheduler.expression.description"/>
+        <AD id="cleanupPath" type="String" default="/mypath" name="Path" description="Delete this path"/>
+    </OCD>
+    <OCD id="com.adobe.training.core.TitlePropertyListener" name="title listener" description="%com.adobe.training.core.TitlePropertyListener.description"/>
+    <OCD id="com.adobe.training.core.MySafeMethodServlet" name="%com.adobe.training.core.MySafeMethodServlet.name" description="%com.adobe.training.core.MySafeMethodServlet.description">
+        <AD id="sling.servlet.paths" type="String" default="/bin/company/repo" name="%sling.servlet.paths.name" description="%sling.servlet.paths.description"/>
+        <AD id="sling.servlet.methods" type="String" default="GET" name="%sling.servlet.methods.name" description="%sling.servlet.methods.description"/>
+    </OCD>
+    <Designate pid="com.adobe.training.core.CleanupServiceImpl">
+        <Object ocdref="com.adobe.training.core.CleanupServiceImpl"/>
+    </Designate>
+    <Designate pid="com.adobe.training.core.TitlePropertyListener">
+        <Object ocdref="com.adobe.training.core.TitlePropertyListener"/>
+    </Designate>
+    <Designate pid="com.adobe.training.core.MySafeMethodServlet">
+        <Object ocdref="com.adobe.training.core.MySafeMethodServlet"/>
+    </Designate>
+</metatype:MetaData>
