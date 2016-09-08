@@ -1,6 +1,6 @@
 package com.adobe.training.core;
 // this is my second commit
-//this will be shown after I commit
+
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
